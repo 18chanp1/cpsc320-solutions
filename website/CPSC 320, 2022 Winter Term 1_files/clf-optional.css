@@ -1,0 +1,348 @@
+/********************************************************************************************
+File:           clf-optional.css
+Version:        6.0
+Last Modified:  Aug-25-2009
+---------------------------------------------------------------------------------------------
+Description:    Stylehseet for the University of British Columbia's web sites.
+---------------------------------------------------------------------------------------------
+Notes:          CSS styles for the full/optional Common Look and Feel Template.
+---------------------------------------------------------------------------------------------
+Version Notes:
+- v.6.0:        Official CSS styles released with Template 6.0.
+---------------------------------------------------------------------------------------------
+Contact:        UBC Public Affairs
+                t: 604.822.2130
+                e: web.admin@ubc.ca
+                w: www.webcommunications.ubc.ca
+
+********************************************************************************************/
+
+@import url('helper/imagenav.css');
+
+/* main nav */
+#UbcMainNav
+{
+	padding: 0;
+	height: 39px;
+	position: relative;
+	overflow: visible;
+	z-index: 70;
+}
+
+#UbcMainNav li
+{
+	float: left;
+	z-index: 75;
+}
+
+#UbcMainNav li a
+{
+	display: block;
+	width: auto;
+}
+
+/* Main Nav Text - text based */
+#UbcMainNav
+{
+	background: #fff url(../img/header/mainNav2LiBg.gif) repeat-x;
+}
+
+#UbcMainNav li a
+{
+	color: #123B5C;
+	text-indent: 0;
+	background: url(../img/header/mainNav2Bg.gif) no-repeat center right;
+	text-align: center;
+	height: 25px;
+	padding: 14px 10px 0;
+	font-weight: bold;
+	font-size: 90%;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#UbcMainNav li a:hover
+{
+	text-decoration: underline;
+}
+    
+    /* Main Nav Sub Menu */
+    #UbcMainNav div.UbcSubMenuWrapper
+    {
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        z-index: 100;
+        display: none;
+    }
+    
+    #UbcMainNav li.UbcSelectedTop
+    {
+        position: absolute;
+        width: 12px;
+        height: 7px;
+        top: 39px;
+        z-index: 200;
+        background: #002859 url(../img/header/mainMenuSelected.gif) no-repeat;
+        display: none;
+    }
+    
+    #UbcMainNav ul.UbcSubMenu
+    {
+        position: absolute;
+        width: 980px;
+		margin-left: 0;
+        left: 0px;
+        z-index: 100;
+        display: none;
+        padding: 7px 0 0 0;
+        background: #002859 url(../img/header/mainMenuSubMenuBg.gif) bottom left repeat-x;
+    }
+    
+    #UbcMainNav ul.UbcSubMenu li.UbcSubMenuSection
+    {
+        width: 245px;
+        padding: 9px 0 16px 0;
+        background: none;
+    }
+    
+    #UbcMainNav ul.UbcSubMenu li.UbcSubMenuSection ul
+    {
+        width: 220px;
+        padding: 0 0 0 20px;
+    }
+    
+    #UbcMainNav ul.UbcSubMenu li.UbcSubMenuSection li
+    {
+        float: none;
+        background: none;
+        border-bottom: 1px solid #405b72;
+    }
+    
+    #UbcMainNav ul.UbcSubMenu li.UbcSubMenuSection li a
+    {
+        height: auto;
+        display: block;
+        text-indent: 0px;
+        background: transparent url(../img/header/mainMenuArrow.gif) no-repeat 0 1.1em;
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.9em;
+        font-weight: bold;
+        padding: 1em 0 0.5em 1.2em;
+        border: none;
+        text-align: left;
+        text-transform: none;
+    }
+    
+    #UbcMainNav ul.UbcSubMenu li.UbcSubMenuSection li a:hover
+    {
+        text-decoration: underline;
+    }
+
+	/* bread crumb */
+
+	#UbcContent #UbcBreadCrumb
+	{
+		font-size: 90%;
+		font-weight: bold;
+		padding: 1.5em 0 1.5em 20px;
+		border-bottom: 1px solid #e3e3e3;
+		overflow: hidden;
+		list-style: none; 
+		margin: 0; 
+	}
+
+	#UbcContent #UbcBreadCrumb li
+	{
+		float: left;
+		margin: 0 10px 0 0;
+	}
+
+	#UbcContent #UbcBreadCrumb li a
+	{
+		text-decoration: underline;
+		color: #5d5d5d;
+		padding: 0 0 0 10px;
+		background: url(../img/content/brownArrow.gif) 0 0.4em no-repeat;
+	}
+	
+	#UbcContent #UbcBreadCrumb li a:hover
+	{
+		text-decoration: none;
+	}
+
+	#UbcContent #UbcBreadCrumb li.current a
+	{
+		color: #123b5c;
+		background-image: url(../img/content/blueArrow.gif)
+	}
+
+	/* Secondary Navigation */
+
+	#UbcContent #UbcSecondNav
+	{
+		float: left;
+		width: 166px;
+		font-size: 90%;
+		font-weight: bold;
+		padding: 60px 0 0 19px;
+	}
+
+	#UbcContent #UbcSecondNav li
+	{
+		border-bottom: 1px solid #e3e3e3;
+	}
+
+	#UbcContent #UbcSecondNav li.UbcLast
+	{
+		border-bottom: none;
+	}
+
+	#UbcContent #UbcSecondNav li a
+	{
+		display: block;
+		padding: 0 0 0 10px;
+		margin: 0.8em 0;
+		color: #5d5d5d;
+		background: url(../img/content/brownArrow.gif) 0 0.3em no-repeat;
+		text-decoration: none;
+	}
+	
+	#UbcContent #UbcSecondNav li a:hover
+	{
+		text-decoration: underline;
+	}
+
+	#UbcContent #UbcSecondNav li a.UbcCurrent
+	{
+		color: #123b5c;
+		background-image: url(../img/content/blueArrow.gif)
+	}
+	
+	#UbcContent #UbcSecondNav ul
+	{
+		margin: 1em 0 0 0;
+		padding: 0 0 0 10px;
+		border-top: 1px solid #e3e3e3;
+	}
+	
+	ul#UbcSecondNav, #UbcSecondNav ul {
+		list-style: none;	
+	}
+	
+	ul#UbcSecondNav {
+		padding: 0;
+		margin: 0;
+	}
+	
+	/* Main Content */
+	#UbcMainContent
+	{
+		float: left;
+		width: 582px;
+		margin: 0 19px 0 19px;
+	}
+	
+	/* content sidebar callout */
+	#UbcContentSidebar
+	{
+		margin: 60px 0 0 0;
+		width: 160px;
+		float: left;
+	}
+	
+	#UbcContentSidebar div
+	{
+		margin: 0 0 30px 0;
+	}
+	
+	#UbcContentSidebar div.UbcQuickLinks
+	{
+		background: #ebeff1 url(../img/content/calloutQuickLinks.gif) no-repeat;
+		padding: 35px 0 30px 0;
+		position: relative;
+	}
+	
+	#UbcContentSidebar div.UbcQuickLinks ul
+	{
+		background: #fff;
+		padding: 0 3px 2px 0;
+		list-style: none;
+		margin: 0;
+	}
+	
+	#UbcContentSidebar div.UbcQuickLinks ul li
+	{
+		position: relative;
+		border-bottom: 1px solid #e3e3e3;
+	}
+	
+	#UbcContentSidebar div.UbcQuickLinks li a.UbcArrow
+	{
+		display: block;
+		padding: 1em 25px 1em 5px;
+		background: url(../img/content/calloutArrowOff.gif) no-repeat right center;
+		color: #00457c;
+		font-size: 90%;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	
+	#UbcContentSidebar div.UbcQuickLinks li a.UbcArrow:hover
+	{
+		background-image: url(../img/content/calloutArrowOn.gif);
+	}
+	
+/* Bottom Nav */
+#UbcBottomNavWrapper
+{
+	width: 980px;
+}
+
+#UbcBottomNav
+{
+    padding: 0 0 15px 15px;
+    width: 965px;
+    background: #fff url(../img/footer/bottomNavBg.gif) repeat-x;
+}
+
+#UbcBottomNav li.UbcMenuSection
+{
+	width: 175px;
+	float: left;
+	margin: 10px 18px 0 0;
+	font-size: 90%;
+}
+
+#UbcBottomNav li.UbcMenuSection h4
+{
+	font-size: 110%;
+	margin: 1em 0 0.4em 0;
+	color: #123b5c;
+}
+
+#UbcBottomNav li.UbcMenuSection ul
+{
+	border-bottom: 1px solid #dcdcdc;
+}
+
+#UbcBottomNav li.UbcMenuSection li
+{
+	border-top: 1px solid #dcdcdc;
+}
+
+#UbcBottomNav li.UbcMenuSection li a
+{
+	color: #5d5d5d;
+	text-decoration: none;
+	display: block;
+	margin: 0.6em 0;
+	padding: 0 0 0 10px;
+	background: url(../img/content/brownArrow.gif) 0 0.2em no-repeat;
+}
+
+#UbcBottomNav li.UbcMenuSection li a:hover
+{
+	text-decoration: underline;
+}

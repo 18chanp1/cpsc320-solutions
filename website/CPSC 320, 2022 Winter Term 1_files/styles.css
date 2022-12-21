@@ -1,0 +1,328 @@
+html,body
+{
+    margin: 0pt;
+    height: 99%;
+    color: black;
+    line-height: 1.2;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table
+{
+    border-collapse:collapse;
+}
+
+.btable table, .btable th, .btable td
+{
+    border: 1px solid blue;
+    margin-left: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.unormal li
+{
+    margin-left: 20px;
+    list-style-type: disc;
+    margin-bottom: 3px;
+}
+
+.unormalclose li
+{
+    margin-left: 10px;
+    list-style-type: disc;
+    margin-bottom: 3px;
+}
+
+li > .unormal2 li
+{
+    margin-left: 20px;
+    list-style-type: circle;
+    margin-bottom: 5px;
+}
+
+ol.decimal {
+    counter-reset: decimal;
+}
+
+ol.roman {
+    counter-reset: roman;
+}
+
+ol.alpha {
+    counter-reset: alpha;
+}
+
+ol li {
+    margin-left: 5px;
+    list-style: none;
+    position: relative;
+}
+
+ol.decimal > li:before {
+    counter-increment: decimal;
+    content: counter(decimal, decimal)". "
+}
+
+ol.roman > li:before {
+    counter-increment: roman;
+    content:"(" counter(roman, lower-roman)") "
+}
+ol.alpha > li:before {
+    counter-increment: alpha;
+    content: counter(alpha, lower-alpha)". "
+}
+
+p
+{
+    padding-top: 2px;
+}
+
+#UbcContentWrapper
+{
+}
+
+#UbcFooterWrapper
+{
+    display: table-row;
+    height: 1px;
+    overflow: hidden;
+}
+
+.Frame
+{
+    width:  100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.Row
+{
+    width:  100%;
+    display:table;
+    overflow: hidden;
+}
+
+html>body .Row.Expand
+{
+    height: auto;
+}
+
+.hbox
+{
+    -webkit-box-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    -moz-box-flex: 1 1 0%;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+
+}
+
+.vbox
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.fixed
+{
+    -webkit-box-flex: 0 1 auto;
+    -webkit-flex: 0 1 auto;
+    -moz-box-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+}
+
+.expandable
+{
+    -webkit-box-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    -moz-box-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.expandablevbox
+{
+    -webkit-box-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    -moz-box-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+#CourseBody
+{
+    border: none;
+    margin-top: 6px;
+    margin-left: 3px;
+    background-color: #f8e0a9;
+    vertical-align:top;
+}
+
+#ubclogo                                                                                            
+{
+    position: absolute;
+    margin-left: 10px;
+    margin-top:   0px;
+}
+
+#CourseHeader
+{
+    border: none;
+    vertical-align:top;
+    text-align: center;
+    height: auto;
+    padding: 3px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    background: #dddddd;
+}
+
+#CourseFooter
+{
+    border: none;
+    vertical-align:top;
+    text-align: left;
+    height: auto;
+    padding: 3px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+table td.CourseMenu
+{
+    margin-left: 0px;
+    padding: 3px;
+    white-space:nowrap;
+}
+
+table td.CourseInfo
+{
+    padding: 3px;
+    width: 99%;
+}
+
+#CourseTitle
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+    padding-bottom: 3px;
+}
+
+.contentsiframe
+{
+    flex: 1;
+    width: 99%;
+    overflow-y: scroll;
+    padding: 0px;
+    margin: 0px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 170px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 305%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.intronav {
+    overflow: visible !important;
+}
+
+table.rdtable {
+    width: 100%;
+    display: table;
+    min-width: 0px;
+}
+
+.rdtable {
+    overflow-x: auto;
+}
+

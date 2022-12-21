@@ -1,0 +1,47 @@
+/********************************************************************************************
+File:           clf-required-fixedwidth.css
+Version:        6.0
+Last Modified:  Aug-25-2009
+---------------------------------------------------------------------------------------------
+Description:    Stylehseet for the University of British Columbia's web sites.
+---------------------------------------------------------------------------------------------
+Notes:          CSS styles for the minimum fixed-width Common Look and Feel Template.
+---------------------------------------------------------------------------------------------
+Version Notes:
+- v.6.0:        Official CSS styles released with Template 6.0.
+---------------------------------------------------------------------------------------------
+Contact:        UBC Public Affairs
+                t: 604.822.2130
+                e: web.admin@ubc.ca
+                w: www.webcommunications.ubc.ca
+
+********************************************************************************************/
+@import url("helper/reset.css");
+@import url("helper/clf-required.css");
+
+
+body .UbcContainer
+{
+	/* width: 980px;*/
+    width: 99%;
+}
+
+#UbcBottomInfo
+{
+    /* width: 980px; */
+    width: 99%;
+}
+
+#UbcHeaderWrapper #UbcHeader li#UbcHeaderLine
+{
+	margin: 0;
+	padding: 0;
+}
+#UbcHeaderWrapper #UbcHeader li#UbcSubUnitLine
+{
+	margin: 0;
+	padding: 0;
+}
+#UbcContentWrapper {
+	overflow: hidden;
+}
